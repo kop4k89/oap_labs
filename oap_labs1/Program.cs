@@ -6,20 +6,22 @@ namespace oap_labs
     {
         public static void Main(string[] args)
         {
-            Console.Write("Введите число N: ");
-            int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Таблица умножения:");
+            Console.WriteLine();
             
-            long factorial = 1; // Используем long, так как факториал быстро растёт
-            
-            // Цикл for для вычисления факториала
-            for (int i = 1; i <= n; i++)
+            // Внешний цикл для множителей (строки)
+            for (int i = 1; i <= 10; i++)
             {
-                factorial = factorial * i; // или factorial *= i;
+                // Внутренний цикл для множимого (столбцы)
+                for (int j = 1; j <= 10; j++)
+                {
+                    // Выводим произведение с форматированием
+                    Console.Write($"{i * j,4}"); // Число 4 задаёт ширину вывода
+                }
+                Console.WriteLine(); // Переход на новую строку после каждого множителя
             }
             
-            Console.WriteLine($"{n}! = {factorial}");
-            
-            // Чтобы консоль не закрылась сразу
+            Console.WriteLine();
             Console.Write("Нажмите ENTER для выхода...");
             Console.ReadLine();
         }
