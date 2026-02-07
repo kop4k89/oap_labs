@@ -18,3 +18,36 @@
 - Язык программирования: C#
 - Среда разработки: JetBrains Rider
 - Система контроля версий: Git
+
+## Лабораторная работа №4 (Циклы)
+
+### Задача 1: Сумма чисел от 1 до N
+
+**Условие**: Дано целое число N. Вычислите сумму всех чисел от 1 до N включительно.
+
+**Код программы**:
+```cs
+using System;
+
+namespace oap_labs
+{
+    internal class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.Write("Введите число N: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            
+            int sum = 0;
+            
+            for (int i = 1; i <= n; i++)
+            {
+                sum = sum + i;
+            }
+            
+            Console.WriteLine($"Сумма чисел от 1 до {n} = {sum}");
+            Console.Write("Нажмите ENTER для выхода...");
+            Console.ReadLine();
+        }
+    }
+}
