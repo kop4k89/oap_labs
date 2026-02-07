@@ -6,22 +6,40 @@ namespace oap_labs
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Таблица умножения:");
-            Console.WriteLine();
+            Console.Write("Сколько чисел Фибоначчи вывести? N = ");
+            int n = Convert.ToInt32(Console.ReadLine());
             
-            // Внешний цикл для множителей (строки)
-            for (int i = 1; i <= 10; i++)
+            if (n <= 0)
             {
-                // Внутренний цикл для множимого (столбцы)
-                for (int j = 1; j <= 10; j++)
+                Console.WriteLine("N должно быть больше 0");
+            }
+            else if (n == 1)
+            {
+                Console.WriteLine("0");
+            }
+            else
+            {
+                long a = 0; // Первое число
+                long b = 1; // Второе число
+                int count = 2; // Уже вывели 2 числа
+                
+                Console.Write($"{a} {b} ");
+                
+                // Цикл while для оставшихся чисел
+                while (count < n)
                 {
-                    // Выводим произведение с форматированием
-                    Console.Write($"{i * j,4}"); // Число 4 задаёт ширину вывода
+                    long next = a + b; // Следующее число
+                    Console.Write($"{next} ");
+                    
+                    // Сдвигаем числа для следующей итерации
+                    a = b;
+                    b = next;
+                    count++;
                 }
-                Console.WriteLine(); // Переход на новую строку после каждого множителя
+                
+                Console.WriteLine();
             }
             
-            Console.WriteLine();
             Console.Write("Нажмите ENTER для выхода...");
             Console.ReadLine();
         }
