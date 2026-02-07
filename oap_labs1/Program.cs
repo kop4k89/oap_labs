@@ -9,15 +9,15 @@ namespace oap_labs
             Console.Write("Введите число N: ");
             int n = Convert.ToInt32(Console.ReadLine());
             
-            int sum = 0; // Переменная для накопления суммы
+            long factorial = 1; // Используем long, так как факториал быстро растёт
             
-            // Цикл for: от 1 до n включительно
+            // Цикл for для вычисления факториала
             for (int i = 1; i <= n; i++)
             {
-                sum = sum + i; // или sum += i;
+                factorial = factorial * i; // или factorial *= i;
             }
             
-            Console.WriteLine($"Сумма чисел от 1 до {n} = {sum}");
+            Console.WriteLine($"{n}! = {factorial}");
             
             // Чтобы консоль не закрылась сразу
             Console.Write("Нажмите ENTER для выхода...");
