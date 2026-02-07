@@ -1,0 +1,6 @@
+C:\Users\user\RiderProjects\oap_labs1\oap_labs1\bin\Debug\oap_labs1.exe
+C:\Users\user\RiderProjects\oap_labs1\oap_labs1\bin\Debug\oap_labs1.pdb
+C:\Users\user\RiderProjects\oap_labs1\oap_labs1\obj\Debug\oap_labs1.csproj.AssemblyReference.cache
+C:\Users\user\RiderProjects\oap_labs1\oap_labs1\obj\Debug\oap_labs1.csproj.CoreCompileInputs.cache
+C:\Users\user\RiderProjects\oap_labs1\oap_labs1\obj\Debug\oap_labs1.exe
+C:\Users\user\RiderProjects\oap_labs1\oap_labs1\obj\Debug\oap_labs1.pdb
